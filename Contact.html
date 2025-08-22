@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us — Pro Theme</title>
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" /> -->
+  <link rel="stylesheet" href="assets/css/Contact.css">
+   <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+     <header class="Header">
+    <div style="width: 100%;  border-bottom: 1px solid var(--color-divider);">
+    <div class="Top-Menu">
+        <div class="Social-Media">
+            <a href="#" class="Social-Icon"><img src="assets/Images/facebook-icon.svg" alt="Facebook"></a>
+            <a href="#" class="Social-Icon"><img src="assets/Images/twitter-icon.svg" alt="Twitter"></a>
+            <a href="#" class="Social-Icon"><img src="assets/Images/linkedin-icon.svg" alt="LinkedIn"></a>
+            <a href="#" class="Social-Icon"><img src="assets/Images/instagram-icon.svg" alt="Instagram"></a>
+        </div>
+
+        <!-- New Divider -->
+        <div class="Vertical-Line1"></div>
+
+        <div class="Nav-Menu Top-Nav-Menu">
+            <div class="Contact-Item">
+                <img src="assets/Images/phone-icon.svg" alt="Phone">
+                <span>815-325-2866</span>
+            </div>
+
+            <div class="Vertical-Line1"></div>
+
+            <div class="Contact-Item">
+                <img src="assets/Images/email-icon.svg" alt="Email">
+                <span>nbxcapitalinvestments@gmail.com</span>
+            </div>
+
+            <div class="Vertical-Line1"></div>
+
+            <div class="Contact-Item">
+                <img src="assets/Images/location-icon.svg" alt="Location">
+                <span>Chicago, IL</span>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Nav Menu -->
+    <div class="Main-Nav">
+        <div class="Logo">
+            <img src="assets/Images/logo.png" alt="NBX Capital Investment">
+        </div>
+
+        <div class="Vertical-Line"></div>
+
+        <div class="Mobile-Menu-Toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav class="Nav-Links">
+            <a href="./index.html" class="Nav-Link">Home</a>
+            <a href="./Service.html" class="Nav-Link">Services</a>
+            <a href="./CaseStudies.html" class="Nav-Link">Case Studies</a>
+            <a href="./Contact.html" class="Nav-Link">Contact Us</a>
+        </nav>
+
+
+        <div class="Vertical-Line"></div>
+
+        <a href="tel:815-325-2866" class="CTA-Button">
+            <img src="assets/Images/phone-white-icon.svg" alt="Phone">
+            <span>815-325-2866</span>
+        </a>
+    </div>
+</header>
+
+
+
+
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-background">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="container">
+        <div class="hero-text animate-slide-up">
+          <div class="eyebrow animate-fade-in">CONTACT&nbsp;&nbsp;US</div>
+          <h1 class="hero-title animate-slide-up-delayed">GET IN TOUCH WITH OUR EXPERT TEAM</h1>
+          <p class="hero-subtitle animate-slide-up-delayed-2">Ready to transform your vision into reality? Share your project details with us and let's create something extraordinary together. Our dedicated team is here to provide personalized solutions that exceed your expectations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Form Section -->
+  <section class="form-section">
+    <div class="container">
+      <div class="form-wrapper">
+        <div class="card animate-on-scroll" data-animation="slide-up">
+          <div class="card-header">
+            <h2 id="contactTitle" class="card-title">CONTACT FORM</h2>
+            <p class="card-description">Fill out the form below and we'll get back to you as soon as possible.</p>
+          </div>
+          
+          <form id="contactForm" novalidate>
+            <div class="form-grid">
+              <!-- Name and Phone Row -->
+              <div class="grid grid-2">
+                <!-- Name -->
+                <div class="field floating animate-on-scroll" data-animation="slide-up" data-delay="100">
+                  <input id="name" name="name" class="control" type="text" placeholder="Enter your name" required aria-describedby="err-name" />
+                  <label class="floating-label" for="name">Name</label>
+                  <div id="err-name" class="error" aria-live="polite"></div>
+                </div>
+                <!-- Phone -->
+                <div class="field floating animate-on-scroll" data-animation="slide-up" data-delay="200">
+                  <input id="phone" name="phone" class="control" type="tel" inputmode="tel" placeholder="Enter your number" required pattern="^[+]?([0-9]{1,4})?[-.\s]?([(]?[0-9]{2,4}[)]?)?([0-9\s.-]{6,})$" aria-describedby="err-phone" />
+                  <label class="floating-label" for="phone">Number</label>
+                  <div id="err-phone" class="error" aria-live="polite"></div>
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="field floating animate-on-scroll" data-animation="slide-up" data-delay="300">
+                <input id="email" name="email" class="control" type="email" placeholder="Enter your email" required aria-describedby="err-email" />
+                <label class="floating-label" for="email">Email</label>
+                <div id="err-email" class="error" aria-live="polite"></div>
+              </div>
+
+              <!-- Services -->
+              <div class="field animate-on-scroll" data-animation="slide-up" data-delay="400">
+                <span class="label">Select Services</span>
+                <div class="chips" id="servicesGroup" aria-describedby="err-services">
+                  <div class="chip"><input type="checkbox" id="s1" name="services" value="Construction"><label for="s1">Construction</label></div>
+                  <div class="chip"><input type="checkbox" id="s2" name="services" value="Financing"><label for="s2">Financing</label></div>
+                  <div class="chip"><input type="checkbox" id="s3" name="services" value="Buying & Selling"><label for="s3">Buying & Selling</label></div>
+                  <div class="chip"><input type="checkbox" id="s4" name="services" value="Home Rehab"><label for="s4">Home Rehab</label></div>
+                  <div class="chip"><input type="checkbox" id="s5" name="services" value="Hemp Business"><label for="s5">Hemp Business</label></div>
+                  <div class="chip"><input type="checkbox" id="s6" name="services" value="Wholesale"><label for="s6">Wholesale</label></div>
+                  <div class="chip"><input type="checkbox" id="s7" name="services" value="Investment"><label for="s7">Investment</label></div>
+                  <div class="chip"><input type="checkbox" id="s8" name="services" value="Property Management"><label for="s8">Property Management</label></div>
+                </div>
+                <div id="err-services" class="error" aria-live="polite"></div>
+              </div>
+
+              <!-- Zip Code -->
+              <div class="grid grid-2">
+                <div class="field floating animate-on-scroll" data-animation="slide-up" data-delay="500">
+                  <input id="zip" name="zip" class="control" type="text" placeholder="12345" required pattern="^[0-9A-Za-z\-\s]{3,10}$" aria-describedby="err-zip" />
+                  <label class="floating-label" for="zip">Zip Code</label>
+                  <div id="err-zip" class="error" aria-live="polite"></div>
+                </div>
+                <div></div>
+              </div>
+
+              <!-- How heard -->
+              <div class="field floating animate-on-scroll" data-animation="slide-up" data-delay="600">
+                <input id="ref" name="ref" class="control" type="text" placeholder="How did you hear about us?" required aria-describedby="err-ref" />
+                <label class="floating-label" for="ref">How did you hear about us?</label>
+                <div id="err-ref" class="error" aria-live="polite"></div>
+              </div>
+
+              <!-- Message -->
+              <div class="field floating animate-on-scroll" data-animation="slide-up" data-delay="700">
+                <textarea id="message" name="message" class="control" rows="5" placeholder="Write your message" required aria-describedby="err-message"></textarea>
+                <label class="floating-label" for="message">Message</label>
+                <div id="err-message" class="error" aria-live="polite"></div>
+              </div>
+
+              <div class="actions animate-on-scroll" data-animation="slide-up" data-delay="800">
+                <button id="submitBtn" class="btn" type="submit">
+                  <span class="btn-text">Submit</span>
+                  <div class="btn-ripple"></div>
+                </button>
+              </div>
+              
+              <div class="divider"></div>
+              <p class="footnote">By submitting, you agree to be contacted about your request. Your info is safe with us.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+          <footer class="home-sec8-footer-section no-grid">
+        <div class="home-sec8-footer-container no-grid">
+            <!-- Logo above the content -->
+            <div class="home-sec8-footer-logo-container">
+                <img src="assets/Images/footer-logo.jpg" alt="NBX Capital Investment" class="home-sec8-footer-logo-img">
+            </div>
+            <div class="home-sec8-footer-header">
+                <h1 class="home-sec8-footer-main-title">Your Trusted Partner in Real Estate Investing</h1>
+            </div>
+
+
+            <div class="home-sec8-footer-content">
+                <div class="home-sec8-footer-column">
+                    <h3 class="home-sec8-footer-column-title">Information</h3>
+                    <div class="home-sec8-footer-contact-info">
+                        <div class="home-sec8-contact-item">
+                            <img src="assets/Images/location-icon.svg" alt="Location" class="home-sec8-contact-icon">
+                            <span class="home-sec8-contact-text">Chicago, IL</span>
+                        </div>
+                        <div class="home-sec8-contact-item">
+                            <img src="assets/Images/phone-icon.svg" alt="Phone" class="home-sec8-contact-icon">
+                            <span class="home-sec8-contact-text">815-325-2866</span>
+                        </div>
+                        <div class="home-sec8-contact-item">
+                            <img src="assets/Images/email-icon.svg" alt="Email" class="home-sec8-contact-icon">
+                            <span class="home-sec8-contact-text">nbxcapitalinvestments@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="home-sec8-footer-column">
+                    <h3 class="home-sec8-footer-column-title">Quick Links</h3>
+                    <nav class="home-sec8-footer-links">
+                        <a href="./index.html"  class="home-sec8-footer-link">Home</a>
+                        <a href="./Service.html" class="home-sec8-footer-link">Services</a>
+                        <a href="./CaseStudies.html" class="home-sec8-footer-link">Case Studies</a>
+                       <a href="./Contact.html" class="home-sec8-footer-link">Contact Us</a>
+                    </nav>
+                </div>
+
+                <div class="home-sec8-footer-column newsletter">
+                    <h3 class="home-sec8-footer-column-title">Join Our Newsletter</h3>
+                    <div class="home-sec8-newsletter-form">
+                        <input type="email" placeholder="Your Email" class="home-sec8-newsletter-input">
+                        <button type="submit" class="home-sec8-newsletter-btn">
+                            <img src="assets/Images/arrow-icon.svg" alt="Submit" class="home-sec8-newsletter-arrow">
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="home-sec8-footer-bottom">
+                <div class="home-sec8-footer-copyright">
+                    <p>© 2024 NBX Capital Investments. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+  <script src="assets/js/Contact.js"></script>
+</body>
+</html>
